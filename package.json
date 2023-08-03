@@ -1,11 +1,14 @@
 {
   "name": "testing-migration-monorepo",
-  "dependencies": {},
   "scripts": {
-    "clean": "pnpm -rp exec rm -rf node_modules && rm -rf dist"
+    "test": "vitest",
+    "clean:packages": "pnpm -rp exec rm -rf node_modules && rm -rf dist",
+    "clean:root": "rm -rf node_modules",
+    "clean:all": "pnpm run clean:packages && pnpm run clean:root",
+    "reset": "pnpm run clean:all && pnpm i"
   },
   "devDependencies": {
-    "tsc": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "vitest": "^0.34.1"
   }
 }
