@@ -1,0 +1,24 @@
+{
+  "name": "@amsp/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "*"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch"
+  },
+  "license": "ISC",
+  "dependencies": {}
+}

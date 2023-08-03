@@ -1,0 +1,11 @@
+{
+  "name": "testing-migration-monorepo",
+  "dependencies": {},
+  "scripts": {
+    "clean": "pnpm -rp exec rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "tsc": "*",
+    "typescript": "*"
+  }
+}
