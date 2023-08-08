@@ -7,5 +7,9 @@ type ButtonProps = PropsWithChildren<{
   onClick: () => void;
 }>;
 export function Button(props: ButtonProps) {
-  return <button onClick={props.onClick}>Other button</button>;
+  return (
+    <button style={{ borderRadius: "3px 3px 3px 3px" }} onClick={props.onClick}>
+      Other button
+    </button>
+  );
 }
